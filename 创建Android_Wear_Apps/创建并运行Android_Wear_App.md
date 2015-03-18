@@ -1,8 +1,3 @@
-> 该教程是在Android Studio下 若你使用的是eclipse 则需要通过SDK Manager将Platform-Tools更新到最新版本 然后就可以在Android 4.4W下看到Android Wear kit并下载 下列大部分步骤基本一致 
-> 
-> 另外可查看穿戴猫论坛中的帖子：[Android Wear开发经验总结之Eclipse开发环境搭建](http://bbs.seacat.cn/thread-1200-1-1.html)
-
-
 通过Android Wear的API可以直接访问基于Android Wear平台的可穿戴设备，可以访问设备上的传感器、GPU，创建Activities和services
 
 
