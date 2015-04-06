@@ -3,7 +3,9 @@
 如果打包正确，当用户安装手机端应用后，系统会自动推送Android wear应用到配对的可穿戴设备上。
 
 
-如果应用正在开发，或者是用debug签名，这个功能就没效果。在开发的时候，需要用adb install命令或者直接用相应的IDE（比如Android studio）来安装。
+如果应用正在开发，或者是用debug签名，这个功能就没效果。手机端应用模块中的权限声明，需要包含android wear端应用模块中的所有权限，否则这个功能也会没有效果。
+
+在开发的时候，需要用adb install命令或者直接用相应的IDE（比如Android studio）来安装。
 
 
 ## 用Android Studio打包 ##
@@ -70,7 +72,7 @@ dependencies {
 package, versionCode, 和versionName的值要和Android Wear应用的AndroidManifest.xml文件中的一样。rawPathResId 就是apk的文件名（不带.apk后缀）。
 
 
-3、在手机端应用的AndroidManifest.xml文件中，在<application>标签下添加一个meta-data 用于引用wearable_app_desc.xml 描述文件：
+3、在手机端应用的AndroidManifest.xml文件中，在application标签下添加一个meta-data 用于引用wearable_app_desc.xml 描述文件：
 
 
     <meta-data android:name="com.google.android.wearable.beta.app"

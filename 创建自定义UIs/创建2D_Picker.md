@@ -3,7 +3,7 @@
 
 为了实现这种模式，需要在你的activity布局中添加GridViewPager 元素，并继承FragmentGridPagerAdapter 类来实现一个adapter提供页面内容。
 
-![](https://developer.android.com/wear/images/07_uilib.png)
+![](07_uilib.png)
 
 ## 添加一个PageGrid ##
 
